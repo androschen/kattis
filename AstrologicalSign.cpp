@@ -1,0 +1,110 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	int t,date;
+	string month;
+	
+	cin>>t;
+	for(int i=0;i<t;i++){
+		cin>>date>>month;
+		
+		if(month=="Jan"){
+			if(date<21){
+				cout<<"Capricorn"<<endl;
+			}
+			else{
+				cout<<"Aquarius"<<endl;
+			}
+		}
+		if(month=="Feb"){
+			if(date<20){
+				cout<<"Aquarius"<<endl;
+			}
+			else{
+				cout<<"Pisces"<<endl;
+			}
+		}
+		if(month=="Mar"){
+			if(date<21){
+				cout<<"Pisces"<<endl;
+			}
+			else{
+				cout<<"Aries"<<endl;
+			}
+		}
+		if(month=="Apr"){
+			if(date<21){
+				cout<<"Aries"<<endl;
+			}
+			else{
+				cout<<"Taurus"<<endl;
+			}
+		}
+		if(month=="May"){
+			if(date<21){
+				cout<<"Taurus"<<endl;
+			}
+			if(date>20){
+				cout<<"Gemini"<<endl;
+			}
+		}
+		if(month=="Jun"){
+			if(date<22){
+				cout<<"Gemini"<<endl;
+			}
+			if(date>21){
+				cout<<"Cancer"<<endl;
+			}
+		}if(month=="Jul"){
+			if(date<23){
+				cout<<"Cancer"<<endl;
+			}
+			if(date>22){
+				cout<<"Leo"<<endl;
+			}
+		}
+		if(month=="Aug"){
+			if(date<23){
+				cout<<"Leo"<<endl;
+			}
+			if(date>22){
+				cout<<"Virgo"<<endl;
+			}
+		}
+		if(month=="Sep"){
+			if(date<22){
+				cout<<"Virgo"<<endl;
+			}
+			else{
+				cout<<"Libra"<<endl;
+			}
+		}
+		if(month=="Oct"){
+			if(date<23){
+				cout<<"Libra"<<endl;
+			}
+			else{
+				cout<<"Scorpio"<<endl;
+			}
+		}
+		if(month=="Nov"){
+			if(date<23){
+				cout<<"Scorpio"<<endl;
+			}
+			else{
+				cout<<"Sagittarius"<<endl;
+			}
+		}
+		if(month=="Dec"){
+			if(date<22){
+				cout<<"Sagittarius"<<endl;
+			}
+			else{
+				cout<<"Capricorn"<<endl;
+			}
+		}
+	}
+	return 0;
+}
